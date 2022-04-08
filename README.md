@@ -17,3 +17,7 @@ Second, we can display new paths using `window.history.pushState`
 \
 \
 Third, we need our `Route` components to be listening to url changes. This turns out to be rather challenging. In this version, `Route` components only listen for `popstate` event which occurs only when url changes due to user using the forward/backward buttons.
+
+## (v2.2) Complete CSR
+
+In this version, `Route` components can get notified whenever url changes. This is due to `Link` components dispatching `navEvent`
