@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 const App = () => {
-  const [count, setCount] = useState(0);
+  const [dummy, setDummy] = useState(0);
+  const count = useRef(0);
 
   useEffect(() => {
     window.addEventListener("click", logCount);
-  }, [count]);
+  }, []);
 
   const logCount = () => {
-    console.log("logCount", count);
+    console.log("logCount", count.current);
   };
 
   const increaseCount = () => {
-    setCount(count + 1);
+    count.current += 1;
+    setDummy(dummy + 1);
   };
 
-  return <button onClick={increaseCount}>{count}</button>;
+  return <button onClick={increaseCount}>{count.current}</button>;
 };
 
 export default App;
