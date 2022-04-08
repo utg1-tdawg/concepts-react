@@ -5,7 +5,7 @@ const App = () => {
 
   useEffect(() => {
     window.addEventListener("click", logCount);
-  }, []);
+  }, [count]);
 
   const logCount = () => {
     console.log("logCount", count);
