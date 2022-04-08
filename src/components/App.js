@@ -7,7 +7,7 @@ const App = () => {
   return (
     <div>
       <Header />
-      <Route path="/">
+      <Route path="/" isDefault={true}>
         <Page title={"Home"} />
       </Route>
 
