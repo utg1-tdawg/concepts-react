@@ -21,3 +21,16 @@ Third, we need our `Route` components to be listening to url changes. This turns
 ## (v2.2) Complete CSR
 
 In this version, `Route` components can get notified whenever url changes. This is due to `Link` components dispatching `navEvent`
+
+## (v3.1) react-router-dom@6
+
+`BrowserRouter` wraps all react-router-dom components
+\
+\
+`Routes` wraps all `Route`s
+\
+\
+`Route` accomplishes the same thing as in v2 - check path and conditionally renders its children (called element in rr6)
+\
+\
+`Link` accomplishes the same thing as in v2 - changes url without default behaviour when clicked

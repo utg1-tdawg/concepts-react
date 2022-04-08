@@ -1,14 +1,14 @@
 import React from "react";
-import Link from "./Link";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <Link path="/" pageName="Home" />
+      <Link to="/">Home</Link>
       <br />
-      <Link path="/about" pageName="About" />
+      <Link to="/about">About</Link>
       <br />
-      <Link path="/contact" pageName="Contact" />
+      <Link to="/contact">Contact</Link>
     </div>
   );
 };
