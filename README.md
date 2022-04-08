@@ -1,3 +1,5 @@
-# How to use this guide
+# (v1) Basic routing
 
-Each topic resides in its own branch. Main branch is used to store boilerplates only.
+`Route` component watches path on the address bar and conditional renders its children.\
+\
+`Header` component contains `Link` components which only serves to provide convenience for user to navigate between pages.
