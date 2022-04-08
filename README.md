@@ -41,3 +41,16 @@ No longer using `<Route exact>`
 \
 \
 After wrapping `Route` component, remember to add `Outlet` component to parent component. Think of it as parent having an outlet when it receives a path with a prefix that matches its path.
+
+## (v3.3) URL-based selection
+
+Purpose: render a component based on url
+\
+\
+Can probably be implemented with redux by maintaining a `selectedInvoice` state but this approach feels more natural.
+\
+\
+`Invoice` is conditionally rendered since it is wrapped with `Route`. The important part is passing props to `Invoice`. This can be achieved passing `:propToPassToInvoice` to `Route path`. `propToPassToInvoice` can then be fetched by `Invoice` using `useParams` hook.
+\
+\
+Remember to add `Outlet` to `Invoices`
