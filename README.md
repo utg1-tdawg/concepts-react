@@ -34,3 +34,10 @@ In this version, `Route` components can get notified whenever url changes. This 
 \
 \
 `Link` accomplishes the same thing as in v2 - changes url without default behaviour when clicked
+
+## (v3.2) Nested routes
+
+No longer using `<Route exact>`
+\
+\
+After wrapping `Route` component, remember to add `Outlet` component to parent component. Think of it as parent having an outlet when it receives a path with a prefix that matches its path.

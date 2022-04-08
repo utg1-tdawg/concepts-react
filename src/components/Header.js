@@ -1,14 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const Header = () => {
   return (
     <div>
-      <Link to="/">Home</Link>
+      <Link to="/home">Home</Link>
       <br />
       <Link to="/about">About</Link>
       <br />
       <Link to="/contact">Contact</Link>
+      <Outlet />
     </div>
   );
 };

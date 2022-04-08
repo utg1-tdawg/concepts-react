@@ -7,11 +7,12 @@ import Header from "./Header";
 const App = () => {
   return (
     <BrowserRouter>
-      <Header />
       <Routes>
-        <Route path="/" element={<Page title="Home" />} />
-        <Route path="/about" element={<Page title="About" />} />
-        <Route path="/contact" element={<Page title="Contact" />} />
+        <Route path="/" element={<Header />}>
+          <Route path="home" element={<Page title="Home" />} />
+          <Route path="about" element={<Page title="About" />} />
+          <Route path="contact" element={<Page title="Contact" />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
