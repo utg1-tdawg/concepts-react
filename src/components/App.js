@@ -5,6 +5,7 @@ import Page from "./Page";
 import Header from "./Header";
 import Invoices from "./Invoices";
 import Invoice from "./Invoice";
+import CreateInvoiceForm from "./CreateInvoiceForm";
 
 const App = () => {
   return (
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="contact" element={<Page title="Contact" />} />
           <Route path="invoices" element={<Invoices />}>
             <Route path=":invoiceNumber" element={<Invoice />} />
+            <Route path="create-invoice-form" element={<CreateInvoiceForm />} />
           </Route>
         </Route>
       </Routes>

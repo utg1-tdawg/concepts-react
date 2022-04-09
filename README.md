@@ -54,3 +54,10 @@ Can probably be implemented with redux by maintaining a `selectedInvoice` state 
 \
 \
 Remember to add `Outlet` to `Invoices`
+
+## (v3.4) Navigation using useNavigate
+
+A user typically relies on `Header` for navigation. However, it is also likely that we want some other buttons to help with user navigation. In this example, the `Create Invoice Form` button serves that purpose.
+\
+\
+Previously, we would create a `history` object and use `history.push(newPath)`. Now, create a `navigate` callback using `useNavigate` and use `navigate(newPath)`.
