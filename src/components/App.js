@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import DisplayContainer from "./DisplayContainer";
+import CountContext from "../contexts/CountContext";
 
 const App = () => {
   const [count, setCount] = useState(0);
@@ -9,7 +10,9 @@ const App = () => {
   return (
     <div>
       <button onClick={onButtonClick}>Increase count</button>
-      <DisplayContainer count={count} />
+      <CountContext.Provider value={count}>
+        <DisplayContainer />
+      </CountContext.Provider>
     </div>
   );
 };

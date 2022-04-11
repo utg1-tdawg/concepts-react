@@ -1,11 +1,11 @@
 import React from "react";
 import Display from "./Display";
 
-const DisplayContainer = ({ count }) => {
+const DisplayContainer = () => {
   return (
     <div>
-      <Display count={count} />
-      <Display count={count} />
+      <Display />
+      <Display />
     </div>
   );
 };
