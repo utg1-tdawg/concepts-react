@@ -1,12 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import CountContext from "../contexts/CountContext";
 
 const Display = () => {
-  return (
-    <div>
-      <CountContext.Consumer>{(count) => count}</CountContext.Consumer>
-    </div>
-  );
+  const countContext = useContext(CountContext);
+  return <div>{countContext}</div>;
 };
 
 export default Display;

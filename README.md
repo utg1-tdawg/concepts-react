@@ -10,3 +10,7 @@ Each `CountContext.Provider` instance creates a new "pipe" for `count` to flow.
 \
 \
 `CountContext.Consumer`'s child is a function that has `CountContext.Provider`'s `value` as its argument.
+
+### Using CountContext.Provider and useContext hook
+
+Alternate way for `Display`s to receive `count` from "pipe"
