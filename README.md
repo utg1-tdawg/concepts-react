@@ -1,3 +1,3 @@
-# How to use this guide
+## Passing props without context
 
-Each topic resides in its own branch. Main branch is used to store boilerplates only.
+App needs to communicate `count` to `Display` components. To do so, it passes `count` to `DisplayContainer` which then passes `count` to both `Display`s. In this situation, `DisplayContainer` carries the `count` prop solely for the purpose of handling it off to `Display`s.
